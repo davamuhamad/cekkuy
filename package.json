@@ -1,0 +1,39 @@
+{
+  "name": "cekkuy",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "next typegen && tsc --noEmit",
+    "test": "tsx --test src/db/stock.test.ts",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "tsx scripts/migrate.ts",
+    "db:bootstrap": "tsx scripts/bootstrap.ts"
+  },
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.1.0",
+    "drizzle-orm": "^0.45.4",
+    "bcryptjs": "^3.0.2",
+    "lucide-react": "^0.468.0",
+    "next": "^16.4.3",
+    "postgres": "^3.4.5",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "tailwindcss": "^4.1.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "drizzle-kit": "^0.31.11",
+    "dotenv": "^17.2.3",
+    "tsx": "^4.23.15",
+    "typescript": "^5.7.0"
+  },
+  "overrides": {
+    "esbuild": "^0.28.2"
+  }
+}
